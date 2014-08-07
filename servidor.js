@@ -14,9 +14,13 @@ nunjucks.configure(__dirname+"/vistas",{
 
 app.listen(8084);
 app.get("/articulo",function(req,res){
-	//res.send("Holadd!");
-	res.render("articulo.html");
-	
+	//res.send("Hola!");
+	modelos.Articulo.find(1).success(function(articulo){
+		//console.log("se encontro articulo:"+articulo.titulo);
+		res.render("articulo.html",{
+			articuloPrincipal:articulo
+		});		
+	});	
 });
 
 app.get("/blog",function(req,res){

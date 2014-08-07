@@ -14,7 +14,19 @@ sequelize.authenticate().success(function(){
 	
 });
 
-
 module.exports.PRUEBA="hola";
+
+var Articulo=sequelize.define("Articulo",{	
+	id:{
+		primaryKey:true,
+		type:Sequelize.INTEGER
+	},
+	titulo:Sequelize.TEXT,
+	contenido:Sequelize.TEXT	
+},{
+	tableName:"articulos"
+});
+
+module.exports.Articulo=Articulo;
 
 
