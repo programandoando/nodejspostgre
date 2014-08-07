@@ -1,25 +1,21 @@
 {
-  "name": "nodejs-telmexhub",
+  "name": "nodejspostgre",
   "version": "0.0.0",
+  "description": "",
   "main": "intro.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/codeismo/nodejs-telmexhub.git"
+    "url": "https://github.com/programandoando/nodejspostgre.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "BSD",
   "bugs": {
-    "url": "https://github.com/codeismo/nodejs-telmexhub/issues"
+    "url": "https://github.com/programandoando/nodejspostgre/issues"
   },
-  "homepage": "https://github.com/codeismo/nodejs-telmexhub",
   "dependencies": {
-    "body-parser": "^1.6.1",
-    "express": "^4.7.3",
-    "nunjucks": "^1.0.5",
-    "sequelize": "^1.7.9",
-    "sqlite3": "^2.2.4"
+    "express": "~4.8.1"
   }
 }
